@@ -22,12 +22,15 @@ function App()
 
   return(
     <div className={(typeof weather.main !="undefined")?
-    (weather.name.localeCompare("Smoke") ? 'app smoke':
-    weather.name.localeCompare("Sunny")? 'app sunny':
-    weather.name.localeCompare("Clouds") ? 'app cloudy':
-    weather.name.localeCompare("Haze") ? 'app haze':
-    weather.name.localeCompare("Rain") ? 'app rainy':
-    weather.name.localeCompare("Storm") ? 'app stormy':'app')
+    (weather.weather[0].main.localeCompare("Smoke") ? 'app smoke':
+    weather.weather[0].main.localeCompare("Sunny")? 'app sunny':
+    weather.weather[0].main.localeCompare("Clouds") ? 'app cloudy':
+    weather.weather[0].main.localeCompare("Haze") ? 'app haze':
+    weather.weather[0].main.localeCompare("Rain") ? 'app rainy':
+    weather.weather[0].main.localeCompare("Storm") ? 'app stormy':
+    weather.weather[0].main.localeCompare("Clear") ? 'app clear':
+    weather.weather[0].main.localeCompare("Fog") ? 'app fog':
+    weather.weather[0].main.localeCompare("Mist") ? 'app mist':'app')
     :'app'
    }>
       <main>
