@@ -21,7 +21,7 @@ body {
 }
 
 .app {
-  background-image: url("./images/default.jpg");
+  background-image: url("./images.jpg/default.jpg");
   background-size: cover;
   background-position: bottom;
   transition: 0.4s ease;
@@ -29,63 +29,63 @@ body {
   overflow: hidden;
 }
 .app.rainy {
-  background-image: url("./images/Rainy.jpg");
+  background-image: url("./images.jpg/Rainy.jpg");
   background-size: cover;
   background-position: bottom;
   transition: 0.4s ease;
   overflow: hidden;
 }
 .app.sunny {
-  background-image: url("./images/Sunnyday.jpeg");
+  background-image: url("./images.jpg/Sunnyday.jpeg");
   background-size: cover;
   background-position: bottom;
   transition: 0.4s ease;
   overflow: hidden;
 }
 .app.smoke {
-  background-image: url("./images/smoke.jpg");
+  background-image: url("./images.jpg/smoke.jpg");
   background-size: cover;
   background-position: bottom;
   transition: 0.4s ease;
   overflow: hidden;
 }
 .app.cloudy {
-  background-image: url("./images/cloudy.jpg");
+  background-image: url("./images.jpg/cloudy.jpg");
   background-size: cover;
   background-position: bottom;
   transition: 0.4s ease;
   overflow: hidden;
 }
 .app.stormy {
-  background-image: url("./images/stormy.jpg");
+  background-image: url("./images.jpg/stormy.jpg");
   background-size: cover;
   background-position: bottom;
   transition: 0.4s ease;
   overflow: hidden;
 }
 .app.haze {
-  background-image: url("./images/haze.jpg");
+  background-image: url("./images.jpg/haze.jpg");
   background-size: cover;
   background-position: bottom;
   transition: 0.4s ease;
   overflow: hidden;
 }
 .app.fog {
-  background-image: url("./images/fog.webp");
+  background-image: url("./images.jpg/fog.webp");
   background-size: cover;
   background-position: bottom;
   transition: 0.4s ease;
   overflow: hidden;
 }
 .app.clear {
-  background-image: url("./images/clear.jpg");
+  background-image: url("./images.jpg/clear.jpg");
   background-size: cover;
   background-position: bottom;
   transition: 0.4s ease;
   overflow: hidden;
 }
 .app.mist {
-  background-image: url("./images/mist.jpg");
+  background-image: url("./images.jpg/mist.jpg");
   background-size: cover;
   background-position: bottom;
   transition: 0.4s ease;
