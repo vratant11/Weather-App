@@ -21,16 +21,16 @@ function App()
   }
 
   return(
-    <div className={(typeof weather.main !="undefined")?
-    (weather.weather[0].main.localeCompare("Smoke") ? 'app smoke':
-    weather.weather[0].main.localeCompare("Sunny")? 'app sunny':
-    weather.weather[0].main.localeCompare("Clouds") ? 'app cloudy':
-    weather.weather[0].main.localeCompare("Haze") ? 'app haze':
-    weather.weather[0].main.localeCompare("Rain") ? 'app rainy':
-    weather.weather[0].main.localeCompare("Storm") ? 'app stormy':
-    weather.weather[0].main.localeCompare("Clear") ? 'app clear':
-    weather.weather[0].main.localeCompare("Fog") ? 'app fog':
-    weather.weather[0].main.localeCompare("Mist") ? 'app mist':'app')
+    <div className={(typeof weather.main !="undefined")?(
+    (weather.weather[0].main==="Smoke" ? 'app smoke':
+    weather.weather[0].main==="Sunny"? 'app sunny':
+    weather.weather[0].main==="Clouds" ? 'app cloudy':
+    weather.weather[0].main==="Haze" ? 'app haze':
+    weather.weather[0].main==="Rain" ? 'app rainy':
+    weather.weather[0].main==="Storm" ? 'app stormy':
+    weather.weather[0].main==="Clear" ? 'app clear':
+    weather.weather[0].main==="Fog" ? 'app fog':
+    weather.weather[0].main==="Mist" ? 'app mist':'app'))
     :'app'
    }>
       <main>
@@ -61,6 +61,12 @@ function App()
           <div className="temp">
             <h2>Temperature</h2>
             {Math.round(weather.main.temp)}°c
+            <div className="max">
+              <h3>Max : {Math.round(weather.main.temp_max)}°c </h3>
+            </div>
+            <div className="min">
+              <h3>Min : {Math.round(weather.main.temp_min)}°c </h3>
+            </div>
           </div>
           <div className="wind">
           <h2>Wind-Speed</h2>

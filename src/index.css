@@ -18,6 +18,21 @@ body {
   text-shadow: 0.375rem 0.375rem rgba(50, 50, 70, 0.5);
   font-style: italic;
   margin-bottom: 1.25rem;
+  animation-name: floating;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+@keyframes floating {
+  0% {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0, 15px);
+  }
+  100% {
+    transform: translate(0, -0px);
+  }
 }
 
 .app {
@@ -114,7 +129,7 @@ main {
   outline: none;
   background-color: rgba(255, 255, 255, 0.849);
   border-radius: 1rem 1rem 1rem 1rem;
-  margin-top: 0rem;
+  margin-top: 3rem;
   box-shadow: 0.625rem 0.5rem rgba(0, 0, 0, 0.2);
   color: #313131;
   font-size: 1.563rem;
@@ -161,6 +176,7 @@ main {
   font-style: italic;
   margin-left: 1rem;
 }
+
 .weather-box .humidity {
   position: relative;
   display: inline-block;
