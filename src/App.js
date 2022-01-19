@@ -55,22 +55,18 @@ function App()
         </div>
         <div className="weather-box">
           <div className="humidity">
-            <h2>Humidity</h2>            
-            {Math.round(weather.main.humidity)}%
+            <h2>Humidity : {Math.round(weather.main.humidity)}% </h2> 
+            <h2>Real feel : {Math.round(weather.main.feels_like)}°c</h2>           
+            
           </div>
           <div className="temp">
             <h2>Temperature</h2>
-            {Math.round(weather.main.temp)}°c
-            <div className="max">
-              <h3>Max : {Math.round(weather.main.temp_max)}°c </h3>
-            </div>
-            <div className="min">
-              <h3>Min : {Math.round(weather.main.temp_min)}°c </h3>
-            </div>
+            {Math.round(weather.main.temp)}°c              
           </div>
           <div className="wind">
-          <h2>Wind-Speed</h2>
-            {Math.round(weather.wind.speed)}Km/h
+          <h2>Wind Speed : {Math.round(weather.wind.speed)}Km/h</h2>
+          <h2>Pressure : {Math.round(weather.main.pressure)}mbar</h2>
+            
           </div>
           <div className="weather">{weather.weather[0].main}</div>
           </div>
