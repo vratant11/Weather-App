@@ -106,6 +106,20 @@ body {
   transition: 0.4s ease;
   overflow: hidden;
 }
+.app.snow {
+  background-image: url("./images.jpg/snow.jpg");
+  background-size: cover;
+  background-position: bottom;
+  transition: 0.4s ease;
+  overflow: hidden;
+}
+.app.drizzle {
+  background-image: url("./images.jpg/drizzle.jpg");
+  background-size: cover;
+  background-position: bottom;
+  transition: 0.4s ease;
+  overflow: hidden;
+}
 main {
   min-height: 100vh;
   background-image: linear-gradient(

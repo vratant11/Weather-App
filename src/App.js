@@ -30,7 +30,9 @@ function App()
     weather.weather[0].main==="Storm" ? 'app stormy':
     weather.weather[0].main==="Clear" ? 'app clear':
     weather.weather[0].main==="Fog" ? 'app fog':
-    weather.weather[0].main==="Mist" ? 'app mist':'app'))
+    weather.weather[0].main==="Mist" ? 'app mist':
+    weather.weather[0].main==="Snow" ? 'app snow':
+    weather.weather[0].main==="Drizzle" ? 'app drizzle':'app'))
     :'app'
    }>
       <main>
